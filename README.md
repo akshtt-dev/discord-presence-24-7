@@ -28,7 +28,7 @@ A web-based platform to keep your Discord accounts online 24/7. Manage multiple 
 
    ```bash
    git clone https://github.com/akshtt-dev/discord-presence-24-7.git
-   cd your-repo-name
+   cd discord-presence-24-7
    ```
 2. **Set Up Environment**
 
