@@ -1,0 +1,32 @@
+<div
+    class="w-full h-full flex flex-col justify-center items-center bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-lg shadow-lg">
+    <h1 class="text-white text-4xl font-body font-semibold select-none animate-fade-in">
+        Hi, {{username}}
+    </h1>
+    <p class="text-gray-300 text-lg mt-4 text-center max-w-lg leading-relaxed select-none">
+        Welcome back! Ready to manage your Discord presence? Let's keep your accounts online and active 24/7 with ease.
+        Dive into your dashboard to get started!
+    </p>
+    <a href="/dashboard/addclient">
+        <button
+            class="mt-8 bg-gradient-to-r from-teal-400 to-teal-600 hover:from-teal-500 hover:to-teal-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition-all duration-300">
+            Go to Dashboard
+        </button>
+    </a>
+</div>
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+</style>

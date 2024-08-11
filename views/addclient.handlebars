@@ -1,0 +1,33 @@
+<section class="bg-gray-900 h-screen overflow-hidden box-border">
+    <section class="flex flex-col w-4/6 py-4 h-full overflow-x-hidden overflow-y-auto">
+        <div class="w-3/6">
+            <h1
+                class="text-slate-200 text-center font-body font-bold text-2xl bg-gradient-to-br from-teal-400 to-teal-700 bg-clip-text text-transparent select-none">
+                Discord - Always Online
+            </h1>
+        </div>
+        <div class="w-3/6 h-4/5 mt-4">
+            <div id="okResponseDiv" class="w-full bg-green-500 mb-3 rounded-sm hidden">
+                <h1 class="text-black font-bold font-semibody py-1 px-2">Logged in successfully as <span
+                        id="client-name">null</span></h1>
+                <div class="h-1 w-full bg-white rounded-b-[inherit]" id="dismissLoading"></div>
+            </div>
+            <div id="errorResponseDiv" class="w-full bg-red-500 mb-3 rounded-sm hidden">
+                <h1 class="text-black font-bold font-semibody py-1 px-2" id="error-message"></h1>
+                <div class="h-1 w-full bg-white rounded-b-[inherit]" id="dismissLoading2"></div>
+            </div>
+            <form class="flex flex-col gap-3" id="submit-token-form">
+                <input type="text" name="name" placeholder="Client Name"
+                    class="bg-slate-800 text-slate-300 py-1 px-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    required autocomplete="off">
+                <input type="text" name="token" placeholder="Discord Token"
+                    class="bg-slate-800 text-slate-300 py-1 px-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    required autocomplete="off">
+                <input type="submit" value="Confirm"
+                    class="bg-gradient-to-r from-green-400 to-green-600 rounded-sm py-1 px-2 cursor-pointer font-semibold font-body text-slate-800 hover:bg-green-500 transition-all duration-200">
+            </form>
+        </div>
+    </section>
+</section>
+
+<script src="/js/panel/add-client/script.js"></script>

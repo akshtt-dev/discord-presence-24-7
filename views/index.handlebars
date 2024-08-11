@@ -1,0 +1,81 @@
+<section class="flex flex-col bg-gradient-to-b from-[#1a1f24] to-[#2c3e50]">
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+    <div class="mt-12 flex flex-row justify-center items-center">
+        <h1
+            class="font-bold text-3xl lg:text-5xl font-bebas text-center text-[#ffffff] selection:text-[#ffffff] animate-fade-in">
+            <span class="selection:text-[#7289da] text-[#7289da]">Discord</span> Presence
+            <span class="selection:text-[#32cd32] text-emerald-500">24/7</span>
+        </h1>
+    </div>
+    <div class="mt-28 flex w-full flex-row mb-12">
+        <div class="w-1/2 flex justify-center items-center">
+            <a href="" target="_blank">
+                <img src="/src/images/root/profile.png" alt="Discord Profile Preview"
+                    class="rounded-md shadow-xl animate-fade-in">
+            </a>
+        </div>
+        <div class="w-1/2 flex flex-col justify-center items-start p-8">
+            <p class="md:text-xl lg:text-2xl font-medium font-body text-[#ffffff] leading-relaxed animate-fade-in">
+                Keep your Discord accounts online 24/7 effortlessly. Our platform offers an intuitive user panel that
+                allows you to manage multiple accounts with ease. Simply connect your account, and we’ll ensure that it
+                stays active around the clock, with no limitations on the number of accounts you can maintain. Enjoy
+                uninterrupted presence on Discord, all managed from a single, convenient interface.
+            </p>
+            <a href="/dashboard" class="cursor-pointer z-10 mt-4 animate-fade-in">
+                <button class="bg-[#7289da] text-black font-bold font-noto px-2 py-1 rounded-sm shadow-md">Add
+                    Account</button>
+            </a>
+        </div>
+    </div>
+    <div class="mt-12 flex flex-col bg-gradient-to-tr from-gray-800 to-gray-900 z-0 py-4 px-12">
+        <h1 class="text-white text-center font-semibold text-3xl font-noto animate-fade-in">Contact Us</h1>
+        <div class="flex flex-row">
+            <div class="w-1/2 flex flex-col">
+            </div>
+            <div class="w-1/2 flex">
+                <div class="flex justify-end w-full">
+                    <div class="sm:w-1/2 md:w-3/5 border border-white py-4 px-4 rounded-lg mt-4 mb-4 animate-fade-in">
+                        <form class="flex flex-col z-10 gap-2 select-none">
+                            <label for="name" class="z-10 font-semibold text-emerald-500">Name <span
+                                    class="text-red-500 font-extrabold">*</span></label>
+                            <input type="text" name="name" id="name" placeholder="eg. John"
+                                class="bg-white z-10 py-1 px-2 rounded-md shadow-md" required>
+                            <label for="email" class="z-10 font-semibold text-emerald-500">Email <span
+                                    class="text-red-500 font-extrabold">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="eg. john@example.com"
+                                class="bg-white z-10 py-1 px-2 rounded-md shadow-md" required>
+                            <label for="message" class="z-10 font-semibold text-emerald-500">Message <span
+                                    class="text-red-500 font-extrabold">*</span></label>
+                            <textarea name="message" id="message" placeholder="Type your message here..."
+                                class="bg-white resize-none z-10 h-40 rounded-md shadow-md py-1 px-2"
+                                required></textarea>
+                            <input type="submit" value="Submit"
+                                class="mt-4 z-10 bg-emerald-500 py-1 px-2 text-lg font-noto font-semibold rounded-md shadow-md cursor-pointer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+</style>

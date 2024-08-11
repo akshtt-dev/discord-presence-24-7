@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel {{#if title}}- {{title}}{{else}}{{/if}}</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+    <main class="bg-gradient-to-br from-gray-900 via-gray-800 to-black h-screen overflow-hidden flex flex-row">
+        <section class="w-1/6 pt-4 border-r border-gray-700">
+            <a href="/dashboard">
+                <h1 class="text-slate-200 text-center font-body text-xl">{{username}}</h1>
+            </a>
+            <div class="flex flex-col mx-auto px-4 mt-4">
+                <a href="/dashboard/addclient">
+                    <div class="flex flex-row gap-2 hover:bg-gray-800 px-2 py-1 rounded-sm">
+                        <div class="flex flex-col items-center justify-center">{{{addSvg}}}</div>
+                        <h1 class="text-slate-200 font-body font-medium">Add Client</h1>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="w-5/6 bg-gray-900 py-2 px-4">
+            {{{body}}}
+        </section>
+    </main>
+</body>
+
+</html>
