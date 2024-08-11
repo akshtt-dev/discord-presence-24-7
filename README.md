@@ -1,9 +1,7 @@
 # Discord Presence 24/7
 
-<div style="border-left: 5px solid yellow; padding-left: 10px; margin-bottom: 20px;">
-    <strong>Warning:</strong> This project is still in development. Some features may not be fully implemented or may change in the future.
-</div>
-
+> [!WARNING]  
+> This project is still in development. Some features may not be fully implemented or may change in the future.
 
 ## Description
 
