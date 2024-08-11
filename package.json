@@ -1,7 +1,7 @@
 {
-  "name": "discord-always-online",
+  "name": "discord-presence-24-7",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web app to keep your Discord accounts online 24/7. Manage multiple accounts easily through a sleek dashboard with secure token storage. Built with Express.js, MongoDB, and Tailwind CSS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +9,9 @@
     "server": "nodemon .",
     "build": "npx tailwindcss -i ./public/src/input.css -o ./public/src/output.css --watch"
   },
-  "keywords": [],
+  "keywords": ["discord", "presence", "24/7", "express", "mongodb", "tailwindcss", "always-on", "online", "dashboard", "web app"],
   "type": "module",
-  "author": "",
+  "author": "akshtt-dev",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.3",

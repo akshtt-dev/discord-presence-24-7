@@ -74,19 +74,3 @@ app.use((req, res, next) => {
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 });
-
-
-
-// TODO: MAKE IT WORK PROPERLY FIX THE BUGS
-import Token from "./models/storeToken.js";
-
-Token.find()
-  .then((tokens) => {
-    const allTokens = tokens.map((user) => {
-      return user.discord.map((discordAccount) => discordAccount.token);
-    });
-    console.log(allTokens);
-  })
-  .catch((error) => {
-    console.error("Error retrieving tokens:", error);
-  });
